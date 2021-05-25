@@ -10,6 +10,6 @@ section{
    display: flex;
    justify-content: center;
    align-items: center;
-   min-height: 100vh;
-   background: #161623;
+   min-height: 320vh;
+   background: url(sea.jpg);
 }
