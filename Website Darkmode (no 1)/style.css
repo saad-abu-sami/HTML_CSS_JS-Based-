@@ -43,3 +43,15 @@ header ul{
    justify-content: center;
    align-items: center;
 }
+header ul li{
+   list-style: none;
+   display: flex;
+   margin-left: 30px;
+}
+header ul li a{
+   display: inline-block;
+   color: var(--black);
+   font-weight: 500;
+   text-decoration: none;
+}
+
