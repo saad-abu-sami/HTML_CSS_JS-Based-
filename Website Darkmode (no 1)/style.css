@@ -101,6 +101,18 @@ header ul li a{
    justify-content: center;
    align-items: center;
 }
+.content .imgBox::before{
+   content: '';
+   position: absolute;
+   width: 350px;
+   height: 350px;
+   background: var(--green);
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
 .content .imgBox img{
    position: relative;
    z-index: 1;
