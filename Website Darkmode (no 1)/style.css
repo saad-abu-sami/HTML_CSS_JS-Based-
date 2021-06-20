@@ -12,6 +12,11 @@
    --white2: #fff;
    --black2: #333;
 }
+.dark{
+   --black:  #fff;
+   --white:  #113828;
+   --black2: #124e36;
+}
 section{
    position: relative;
    width: 100%;
@@ -79,6 +84,12 @@ header ul li a{
    font-size: 1.2em;
    color: var(--green);
 }
+.dark .content .textBox h2 span{
+   color: #00ff9b;
+}
+.content .textBox p{
+   color: var(--black);
+}
 .content .textBox a{
    display: inline-block;
    margin-top: 20px;
@@ -128,6 +139,7 @@ header ul li a{
 }
 .sci li{
    list-style: none;
+
 }
 .sci li a{
    display: inline-block;
@@ -136,10 +148,15 @@ header ul li a{
    height: 50px;
    background: var(--black2);
    color: var(--white2);
+   border-radius: 50%;
    display: flex;
    justify-content: center;
    align-items: center;
    text-decoration: none;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
 }
 .sci li a .fa{
    font-size: 1.2em;
@@ -167,4 +184,22 @@ header ul li a{
    font-family: fontAwesome;
    color: var(--white);
    font-size: 20px;
+}
+.themeSwitch.active::before{
+   content: '\f185';
+}
+@media (max-width: 991px){
+   section {
+      padding: 150px 20px;
+   }
+   header{
+      padding: 20px;
+   }
+   .sci{
+      bottom: 20px;
+      left: 20px;
+   }
+   .content{
+      flex-direction: column-reverse;
+   }
 }
