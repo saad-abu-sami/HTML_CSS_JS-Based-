@@ -5,6 +5,9 @@
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
 }
+body{
+   overflow-x: hidden;
+}
 :root{
    --black:  #333;
    --green:  #017143;
@@ -202,4 +205,31 @@ header ul li a{
    .content{
       flex-direction: column-reverse;
    }
+   .content .textBox,
+   .content .imgBox{
+      max-width: 100%;
+      margin-right: 0px;
+   }
+   .content .imgBox img{
+      max-width: 250px;
+   }
+   .content .imgBox::before{
+      width: 125px;
+      height: 125px;
+      clip-path: circle(125px at center);
+   }
+   .content .textBox h2{
+      font-size: 1.75em;
+   }
+   .navigation{
+      display: none;
+   }
+   .toggle{
+      position: relative;
+      width: 30px;
+      height: 30px;
+      background: url(menu.png);
+      filter: invert(1);
+      -webkit-filter: invert(1);
+}
 }
