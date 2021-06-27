@@ -214,8 +214,8 @@ header ul li a{
       max-width: 250px;
    }
    .content .imgBox::before{
-      width: 125px;
-      height: 125px;
+      /* width: 125px;
+      height: 125px; */
       clip-path: circle(125px at center);
    }
    .content .textBox h2{
@@ -224,6 +224,27 @@ header ul li a{
    .navigation{
       display: none;
    }
+   .navigation.active{
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      background: var(--white);
+      flex-direction: column;
+   }
+   header ul li{
+      margin: 10px 0;
+      margin-left: 0;
+   }
+   header ul li a{
+      font-size: 1.5em;
+      font-weight: 300;
+   }
    .toggle{
       position: relative;
       width: 30px;
@@ -231,5 +252,22 @@ header ul li a{
       background: url(menu.png);
       filter: invert(1);
       -webkit-filter: invert(1);
-}
+      background-size: 30px;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      z-index: 1000;
+   }
+   .toggle.active{
+      background: url(close.png);
+      filter: invert(1);
+      -webkit-filter: invert(1);
+      background-size: 25px;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+   .dark .toggle{
+      filter: invert(0);
+      -webkit-filter: invert(0);
+   }
 }
