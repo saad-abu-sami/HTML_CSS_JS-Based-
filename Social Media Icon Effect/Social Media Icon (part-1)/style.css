@@ -18,6 +18,34 @@
 .sci li{
    list-style: none;
 }
+.sci li::before{
+   content: attr(data-text);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,calc(-50% + 160px));
+   -webkit-transform: translate(-50%,calc(-50% + 160px));
+   -moz-transform: translate(-50%,calc(-50% + 160px));
+   -ms-transform: translate(-50%,calc(-50% + 160px));
+   -o-transform: translate(-50%,calc(-50% + 160px));
+   font-size: 14vw;
+   pointer-events: none;
+   font-weight: 700;
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+   opacity: 0;
+}
+.sci li:hover::before{
+   opacity: 0.1;
+   transform: translate(-50%,calc(-50% + 160px));
+   -webkit-transform: translate(-50%,calc(-50% + 160px));
+   -moz-transform: translate(-50%,calc(-50% + 160px));
+   -ms-transform: translate(-50%,calc(-50% + 160px));
+   -o-transform: translate(-50%,calc(-50% + 160px));
+}
 .sci li a{
    position: relative;
    display: inline-block;
@@ -45,6 +73,29 @@
    -ms-transition: background 0.25s;
    -o-transition: background 0.25s;
 }
-.sci li a:hover{
-   background: #1877f2;
+.sci li a:hover.facebook{
+   background: #145cf8;
+}
+.sci li a:hover.whatsapp{
+   background: #10c963;
+}
+.sci li a:hover.youtube{
+   background: #fd0505;
+}
+.sci li a:hover.twitter{
+   background: #4488e2f6;
+}
+.sci li a:hover.instagram{
+   background: #b80c5c;
+}
+.sci li a .fa{
+   transition: 0.25s;
+   -webkit-transition: 0.25s;
+   -moz-transition: 0.25s;
+   -ms-transition: 0.25s;
+   -o-transition: 0.25s;
+   pointer-events: none;
+}
+.sci li a:hover .fa{
+   color: #fff;
 }
