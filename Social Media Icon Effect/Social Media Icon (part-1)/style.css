@@ -10,6 +10,11 @@
    justify-content: center;
    align-items: center;
    min-height: 100vh;
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
 }
 .sci{
    position: relative;
@@ -73,6 +78,13 @@
    -ms-transition: background 0.25s;
    -o-transition: background 0.25s;
 }
+.js-tilt-glare{
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
 .sci li a:hover.facebook{
    background: #145cf8;
 }
@@ -98,4 +110,9 @@
 }
 .sci li a:hover .fa{
    color: #fff;
+   transform: scale(1.65) translateZ(50px);
+   -webkit-transform: scale(1.65) translateZ(50px);
+   -moz-transform: scale(1.65) translateZ(50px);
+   -ms-transform: scale(1.65) translateZ(50px);
+   -o-transform: scale(1.65) translateZ(50px);
 }
