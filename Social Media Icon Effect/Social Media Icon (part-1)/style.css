@@ -100,6 +100,15 @@
 .sci li a:hover.instagram{
    background: #b80c5c;
 }
+.sci li a:hover.github{
+   background: #3a3838;
+}
+.sci li a:hover.snapchat{
+   background: #f1f506;
+}
+.sci li a:hover.reddit{
+   background: #f57206;
+}
 .sci li a .fa{
    transition: 0.25s;
    -webkit-transition: 0.25s;
