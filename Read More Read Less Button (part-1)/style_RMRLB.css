@@ -9,6 +9,9 @@
    --sada: #fff;
    --gray: #313131;
    --gray2: #3f3f3f;
+   --gray3: #383838;
+   --lightGreen: #17e78c;
+   --skyblue: rgba(24, 192, 243, 0.918);
 }
 body{
    display: flex;
@@ -38,8 +41,8 @@ body{
    top: 0;
    right: 0;
    border: 20px solid transparent;
-   border-top: 20px solid #17e78c;
-   border-right: 20px solid #17e78c;
+   border-top: 20px solid var(--lightGreen);
+   border-right: 20px solid var(--lightGreen);
 }
 .container .card .icon{
    margin-bottom: 10px;
@@ -66,4 +69,32 @@ body{
    font-size: 1.4em;
    font-weight: 600;
    margin-bottom: 10px;
+}
+.container .card .content p{
+   font-weight: 300;
+   color: var(--sada);
+}
+.container .card .more{
+   position: relative;
+   padding: 10px 15px;
+   background: var(--lightGreen);
+   margin-top: 15px;
+   display: inline-block;
+   cursor: pointer;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: var(--gray3);
+   font-weight: 500;
+   font-size: 14px;
+   letter-spacing: 2px;
+}
+.container .card.active .more{
+   background: var(--skyblue);
+   color: var(--sada);
+}
+.container .card .more::before{
+   content: 'Read More';
+}
+.container .card.active .more::before{
+   content: 'Read Less';
 }
