@@ -104,3 +104,37 @@ header{
    width: 100%;
    max-width: 600px;
 }
+/* social icon customization here */
+.footer{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   display: flex;
+   padding: 30px 100px;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+.sci{
+   display: flex;
+}
+.sci li{
+   list-style: none;
+}
+.sci li a{
+   color: #fff;
+   font-size: 2em;
+   margin-right: 20px;
+   display: inline-block;
+   transition: 0.25s;
+   -webkit-transition: 0.25s;
+   -moz-transition: 0.25s;
+   -ms-transition: 0.25s;
+   -o-transition: 0.25s;
+}
+.sci li a:hover{
+   transform: translateY(-6px);
+   -webkit-transform: translatey(-6px);
+   -moz-transform: translatey(-6px);
+   -ms-transform: translatey(-6px);
+   -o-transform: translatey(-6px);
+}
