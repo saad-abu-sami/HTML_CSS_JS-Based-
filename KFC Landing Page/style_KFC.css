@@ -138,3 +138,28 @@ header{
    -ms-transform: translatey(-6px);
    -o-transform: translatey(-6px);
 }
+.prevNext{
+   position: relative;
+   user-select: none;
+}
+.prevNext p{
+   position: relative;
+   color: #fff;
+   text-align: end;
+   margin-bottom: 15px;
+}
+.prevNext p::before{
+   content: '';
+   position: absolute;
+   width: 50px;
+   height: 2px;
+   background: #fff;
+   left: -65px;
+   top: 50%;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+
+}
